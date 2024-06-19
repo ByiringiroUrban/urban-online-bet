@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Betting Now - Urban Bet</title>
+    <link rel="stylesheet" href="betting.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Urban Bet</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Betting</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#" id="login-register-btn">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="betting">
+            <h1>Available Betting Events</h1>
+            <div class="event-list">
+                <div class="event">
+                    <h2>Event 1</h2>
+                    <p>Details about event 1.</p>
+                    <button class="bet-button" data-event="1">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 2</h2>
+                    <p>Details about event 2.</p>
+                    <button class="bet-button" data-event="2">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 3.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 4.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 5.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 6.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 7.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 8.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 9.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 10.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 11.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+                <div class="event">
+                    <h2>Event 3</h2>
+                    <p>Details about event 12.</p>
+                    <button class="bet-button" data-event="3">Place Bet</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- Login/Register Modal -->
+    <div id="login-register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-register-form">Register here</a></p>
+            <form id="register-form" class="hidden">
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Place Bet Modal -->
+    <div id="place-bet-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Place Your Bet</h2>
+            <form id="bet-form">
+                <p id="bet-details"></p>
+                <label for="bet-amount">Bet Amount:</label>
+                <input type="number" id="bet-amount" name="bet-amount" required>
+                <button type="submit">Place Bet</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="betting.js"></script>
+</body>
+</html>

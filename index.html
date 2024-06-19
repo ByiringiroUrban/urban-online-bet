@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Bet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Urban Bet</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Betting</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#" id="login-register-btn">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="promo">
+                <h1>Welcome to Urban Bet</h1>
+                <p>Your best online betting platform</p>
+                <a href="betting.html"><button class="cta-button" id="cta-button">Start Betting Now</button></a>
+            </div>
+        </section>
+        <section class="promotions">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="promo6.jpg" alt="Promo 1">
+                    <div class="slide-caption">Promo 1</div>
+                </div>
+                <div class="slide">
+                    <img src="promo2.jpg" alt="Promo 2">
+                    <div class="slide-caption">Promo 2</div>
+                </div>
+                <div class="slide">
+                    <img src="promo3.jpg" alt="Promo 3">
+                    <div class="slide-caption">Promo 3</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- Login/Register Modal -->
+    <div id="login-register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-register-form">Register here</a></p>
+            <form id="register-form" class="hidden">
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
